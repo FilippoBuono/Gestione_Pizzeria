@@ -17,5 +17,9 @@ namespace Gestione_Pizzeria
             InitializeComponent();
         }
 
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

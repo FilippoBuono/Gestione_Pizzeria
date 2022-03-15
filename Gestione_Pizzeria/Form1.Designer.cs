@@ -145,6 +145,7 @@ namespace Gestione_Pizzeria
             this.btnAggiungi.TabIndex = 10;
             this.btnAggiungi.Text = "Aggiungi";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // txtquantità
             // 
