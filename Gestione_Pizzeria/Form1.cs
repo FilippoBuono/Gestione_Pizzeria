@@ -19,6 +19,29 @@ namespace Gestione_Pizzeria
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
+            int nMargherite = 0;
+            int nVerdure = 0; 
+            int nStagioni=0;
+            
+            switch (cmbTipoPizze.Text) 
+            {
+                case "Margherita":                  
+                    lstriepilogo.Items.Add("Margherita " + txtquantità.Text);
+                    nMargherite= nMargherite + Convert.ToInt32( txtquantità.Text);
+                    lblnMargherite.Text = Convert.ToString(nMargherite);
+                    break;
+                case "Verdure":
+                    lstriepilogo.Items.Add("Verdure " + txtquantità.Text);
+                    nVerdure= nVerdure + Convert.ToInt32(txtquantità.Text);
+                    lblnVerdure.Text = Convert.ToString(nVerdure);
+                    break;
+                case "4 Stagioni":
+                    lstriepilogo.Items.Add("4 Stagioni " + txtquantità.Text);
+                    nStagioni = nStagioni + Convert.ToInt32(txtquantità.Text);
+                    lblnStagioni.Text = Convert.ToString(nStagioni);
+                    break;
+                    
+            }
 
         }
     }
